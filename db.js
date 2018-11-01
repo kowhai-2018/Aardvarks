@@ -1,7 +1,19 @@
-function getUser()
+const environment = process.env.NODE_ENV || 'development'
+const config = require('./knexfile')[environment]
+const connection = require('knex')(config)
+const devDB = connection
 
-function getTarget()
+// module.exports = {
+//   getUsers: getUsers,
+//   getTarget: getTarget,
+//   getAct: getAct,
+//   updateCompleted: updateCompleted
+// }
 
-function getAct()
+// function getUser()
 
-function updateCompleted()
+// function getTarget()
+
+// function getAct()
+
+// function updateCompleted()
