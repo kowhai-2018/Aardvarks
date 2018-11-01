@@ -1,10 +1,18 @@
 <div class="users">
+  <div class="main">
   <img class="img-circle" src="{{Pic}}" alt="{{Name}}">
-  <h2 class="profileName">{{Name}} {{tasks}} {{target}} 
+  <h2 class="profileName">{{Name}}... {{tasks}} {{target}}</h2>
   <img class="img-circle" src="{{Pic}}" alt="{{Name}}">
+  <p>Goodluck on your quest... Try to complete your task in secret</p>
+  <form class="checkbox">
+  <input type="checkbox" name="completed" value="completed"> Completed<br>
+  <input type="checkbox" name="caught" value="Caught"> I got caught<br>
+</form>
+  </div>
     <div class="container">
-    <p class="feedback-box">"<em> {{feedback}} </em>" <br> - Sent by <strong>{{sender}}</strong></p>
+    <p>How did completing this task affect your day?</p>
+    <p class="blog">"<em> {{blog}} </em>" <br>
   </div>
 <br>
-  <a class="askLink" href="/ask">Send Feedback</a>
+  <button>Generate new task</button>
 </div>
