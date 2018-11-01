@@ -1,0 +1,11 @@
+<h1>Random Acts of Kindness</h1>
+<br>
+<h3>Click on your pic to find your task and target</h3>
+<br>
+<div class="container">
+  {{#each users}}
+  <div class="users-list">
+    <a href="/profile/{{id}}"><img class="img-circle" src="{{Pic}}" alt="{{Name}}"></a>
+  </div>
+  {{/each}}
+</div>

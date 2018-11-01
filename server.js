@@ -1,0 +1,6 @@
+/
+/profile/:id
+
+
+
+/completed
