@@ -5,14 +5,14 @@ exports.seed = function (knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
-        {id: 1, Name: 'Carel', Pic: '/Public/images/carel.jpeg'},
-        {id: 2, Name: 'Alina', Pic: '/Public/images/alina.jpeg'},
-        {id: 3, Name: 'Allie', Pic: '/Public/images/allie.jpeg'},
-        {id: 4, Name: 'Kiri', Pic: '/Public/images/kiri.jpeg'},
-        {id: 5, Name: 'Chris', Pic: '/Public/images/chris.jpeg'},
-        {id: 6, Name: 'Jeremy', Pic: '/Public/images/jeremy.png'},
-        {id: 7, Name: 'Maya', Pic: '/Public/images/maya.jpeg'},
-        {id: 8, Name: 'Dani', Pic: '/Public/images/dani.jpeg'}
+        {id: 1, name: 'Carel', pic: '/images/carel.jpeg'},
+        {id: 2, name: 'Alina', pic: '/images/alina.jpeg'},
+        {id: 3, name: 'Allie', pic: '/images/allie.jpeg'},
+        {id: 4, name: 'Kiri', pic: '/images/kiri.jpeg'},
+        {id: 5, name: 'Chris', pic: '/images/chris.jpeg'},
+        {id: 6, name: 'Jeremy', pic: '/images/jeremy.png'},
+        {id: 7, name: 'Maya', pic: '/images/maya.jpeg'},
+        {id: 8, name: 'Dani', pic: '/images/dani.jpeg'}
       ])
     })
 }
