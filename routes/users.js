@@ -33,8 +33,9 @@ router.post('/profile/:id/done', (req, res) => {
   const act = req.body.act
   const target = req.body.target
   const targetPic = req.body.targetPic
+  const id = req.params.id
 
-  res.render('done', {completed, caught, giver, act, target, targetPic})
+  res.render('done', {completed, caught, giver, act, target, targetPic, id})
 })
 // db.getUsers()
 // .then(users => {
