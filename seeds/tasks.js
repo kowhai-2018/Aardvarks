@@ -16,7 +16,7 @@ exports.seed = function (knex, Promise) {
         {id: 9, tasks: 'go out for a drink with '},
         {id: 10, tasks: 'create something for '},
         {id: 11, tasks: 'say something nice to '},
-        {id: 12, tasks: 'pat on the back '},
+        {id: 12, tasks: 'give a pat on the back to '},
         {id: 13, tasks: 'get the best beanbag for '},
         {id: 14, tasks: 'get the yoga equipment ready for '},
         {id: 15, tasks: 'clean the lunch dishes for '}

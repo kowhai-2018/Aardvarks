@@ -8,17 +8,16 @@
   <title>Document</title>
 </head>
 <body>
-<div class="users">
-  <div class="main"><h2>{{act.tasks}} {{target.name}}</h2>
+  <div class="container">
+  <h2>{{act.tasks}} {{target.name}}</h2>
   <img class="img-circle" src="{{target.pic}}" alt="{{target.name}}">
-</div>
 {{#if completed}}<h2>Congratulations on completing your task</h2>{{/if}}
 {{#if caught}}<h2>Sorry you got caught</h2>{{/if}}
-    <div class="container">
     <p>How did completing this task affect your day?</p>
     <p class="blog"><textarea rows="4" cols="50"></textarea><br>
   </div>
 <br>
+<div>
   <button onclick='href=location.reload()'action="/profile/{{giver.id}}">Generate new task</button>
 </div>
 </body>

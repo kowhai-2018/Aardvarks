@@ -8,24 +8,29 @@
   <title>Document</title>
 </head>
 <body>
-<div class="users">
-  <div class="main">
+<div class="container">
   <img class="img-circle" src="{{giver.pic}}" alt="{{giver.name}}">
   <h2 class="profileName">{{giver.name}}... {{act.tasks}} {{target.name}}</h2>
-  <img class="img-circle" src="{{target.pic}}" alt="{{target.name}}">
+  <img class="img-circle" src="{{target.pic}}" alt="{{target.name}}"></div>
+  <br>
+  <br>
+  <br>
+  <div class="container">
   <p>Goodluck on your quest... Try to complete your task in secret</p>
+  </div>
+<div class="container">
   <form action="/profile/{{giver.id}}/done" method="POST" class="checkbox">
   <input type="checkbox" name="completed" value="completed"> Completed<br>
   <input type="checkbox" name="caught" value="Caught"> I got caught<br>
   <button type="submit">Submit</button>
 </form>
   </div>
-    {{!-- <div class="container">
-    <p>How did completing this task affect your day?</p>
-    <p class="blog">"<em> {{blog}} </em>" <br>
-  </div> --}}
 <br>
+<div>
   <button onclick='href=location.reload()'action="/profile/{{giver.id}}">Generate new task</button>
 </div>
+<br>
+<br>
+<br>
 </body>
 </html>
