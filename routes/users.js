@@ -29,7 +29,12 @@ router.get('/profile/:id', (req, res) => {
 router.post('/profile/:id/done', (req, res) => {
   const completed = req.body.completed
   const caught = req.body.caught
-  res.render('done', {completed, caught})
+  const giver = req.body.giver
+  const act = req.body.act
+  const target = req.body.target
+  const targetPic = req.body.targetPic
+
+  res.render('done', {completed, caught, giver, act, target, targetPic})
 })
 // db.getUsers()
 // .then(users => {

@@ -20,6 +20,10 @@
   </div>
 <div class="container">
   <form action="/profile/{{giver.id}}/done" method="POST" class="checkbox">
+  <input type="hidden" name="giver" value="{{giver.name}}">
+  <input type="hidden" name="act" value="{{act.tasks}}">
+  <input type="hidden" name="target" value="{{target.name}}">
+  <input type="hidden" name="targetPic" value="{{target.pic}}">
   <input type="checkbox" name="completed" value="completed"> Completed<br>
   <input type="checkbox" name="caught" value="Caught"> I got caught<br>
   <button type="submit">Submit</button>
