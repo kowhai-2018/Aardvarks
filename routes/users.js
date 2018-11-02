@@ -25,6 +25,12 @@ router.get('/profile/:id', (req, res) => {
     })
   })
 })
+
+router.post('/profile/:id/done', (req, res) => {
+  const completed = req.body.completed
+  const caught = req.body.caught
+  res.render('done', {completed, caught})
+})
 // db.getUsers()
 // .then(users => {
 //   console.log(Math.floor(Math.random() * Math.floor(8))

@@ -14,9 +14,10 @@
   <h2 class="profileName">{{giver.name}}... {{act.tasks}} {{target.name}}</h2>
   <img class="img-circle" src="{{target.pic}}" alt="{{target.name}}">
   <p>Goodluck on your quest... Try to complete your task in secret</p>
-  <form class="checkbox">
+  <form action="/profile/{{giver.id}}/done" method="POST" class="checkbox">
   <input type="checkbox" name="completed" value="completed"> Completed<br>
   <input type="checkbox" name="caught" value="Caught"> I got caught<br>
+  <button type="submit">Submit</button>
 </form>
   </div>
     {{!-- <div class="container">
