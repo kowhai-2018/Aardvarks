@@ -1,18 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/main.css">
+  <title>Document</title>
+</head>
+<body>
 <div class="users">
   <div class="main">
-  <img class="img-circle" src="{{Pic}}" alt="{{Name}}">
-  <h2 class="profileName">{{Name}}... {{tasks}} {{target}}</h2>
-  <img class="img-circle" src="{{Pic}}" alt="{{Name}}">
+  <img class="img-circle" src="{{giver.pic}}" alt="{{giver.name}}">
+  <h2 class="profileName">{{giver.name}}... {{act.tasks}} {{target.name}}</h2>
+  <img class="img-circle" src="{{target.pic}}" alt="{{target.name}}">
   <p>Goodluck on your quest... Try to complete your task in secret</p>
   <form class="checkbox">
   <input type="checkbox" name="completed" value="completed"> Completed<br>
   <input type="checkbox" name="caught" value="Caught"> I got caught<br>
 </form>
   </div>
-    <div class="container">
+    {{!-- <div class="container">
     <p>How did completing this task affect your day?</p>
     <p class="blog">"<em> {{blog}} </em>" <br>
-  </div>
+  </div> --}}
 <br>
-  <button>Generate new task</button>
+  <button href="/profile/{{giver.id}}">Generate new task</button>
 </div>
+</body>
+</html>

@@ -20,7 +20,7 @@ function getUser (id, db = connection) {
 }
 function getRandom (arrLength, id) {
   return Math.floor(Math.random() * Math.floor(arrLength))
-}
+} 
 
 function getTarget (id, db = connection) {
   let i = id
@@ -30,8 +30,9 @@ function getTarget (id, db = connection) {
   return db('users').where('id', i).first()
 }
 
-function getAct () {
-
+function getAct (db = connection) {
+  let i = getRandom(16)
+  return db('tasks').where('id', i).first()
 }
 
 function updateCompleted () {

@@ -15,7 +15,16 @@ router.get('/', (req, res) => {
     })
 })
 
-// router.get('/profile/:id', (req, res) => {
+router.get('/profile/:id', (req, res) => {
+  const id = Number(req.params.id)
+  db.getUser(id).then((giver) => {
+    db.getAct().then((act) => {
+      db.getTarget(id).then((target) => {
+        res.render('profile', {target, act, giver})
+      })
+    })
+  })
+})
 // db.getUsers()
 // .then(users => {
 //   console.log(Math.floor(Math.random() * Math.floor(8))
